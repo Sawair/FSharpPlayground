@@ -22,16 +22,29 @@ let RollDices (quantity, size, modifer) =
     ([ for i in [0.. quantity-1] -> RollDice size ], modifer)
     
 let PrintAllDices (list, modifer) =
-    printf "Roll resoults:\t"
-    [for i in list -> printf "%d\t" i] |> ignore
+    printf "Roll resoults:\t( "
+    [for i in list -> printf "%d " i] |> ignore
+    printfn ")"
     (list, modifer)
+
+let GetResult (list, modifer) =
+    List.sum list + modifer
     
 let Roll (dice:string) =
-    ParseDice dice |> RollDices |> PrintAllDices
+    ParseDice dice |> RollDices |> PrintAllDices |> GetResult |> printfn "Roll resoult: %d"
         
+let WhetherToContinue (answer:string) =
+    match answer with
+        | "Y" -> true
+        | "y" -> true
+        | _ -> false
 
 [<EntryPoint>]
 let main argv =
-    printf "What to roll: "
-    Console.ReadLine() |> Roll |> ignore
+    let mutable rollAgain = true
+    while rollAgain do
+        printf "What to roll: "
+        Console.ReadLine() |> Roll |> ignore
+        printf "Next roll?[y/N]: "
+        rollAgain <- Console.ReadLine() |> WhetherToContinue
     0
