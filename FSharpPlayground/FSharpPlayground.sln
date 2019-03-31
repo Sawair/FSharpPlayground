@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DiceThrower", "DiceThrower\DiceThrower.fsproj", "{56601923-9E3B-4A62-AE41-6FC8C7B557DD}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ScreenScrapingExample", "ScreenScrapingExample\ScreenScrapingExample.fsproj", "{8F1D18E9-2BCC-4A2D-BD90-59ABBE7F38C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{56601923-9E3B-4A62-AE41-6FC8C7B557DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56601923-9E3B-4A62-AE41-6FC8C7B557DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56601923-9E3B-4A62-AE41-6FC8C7B557DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F1D18E9-2BCC-4A2D-BD90-59ABBE7F38C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1D18E9-2BCC-4A2D-BD90-59ABBE7F38C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1D18E9-2BCC-4A2D-BD90-59ABBE7F38C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1D18E9-2BCC-4A2D-BD90-59ABBE7F38C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
